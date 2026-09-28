@@ -5,7 +5,7 @@ section[id],div[id]{scroll-margin-top:84px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #F97316;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
 .navbar{width:100%;height:76px;background:#fff;border-bottom:1px solid #F1F2F4;box-shadow:0 1px 6px rgba(0,0,0,.04);display:flex;align-items:center;padding:0 32px;gap:24px}
-.logo img{height:48px;width:auto;object-fit:contain;display:block}
+.logo img{height:94px;width:auto;object-fit:contain;display:block;transform:translate(24px,-3px)}
 .links{display:flex;gap:28px;margin:0 auto}
 .links a{text-decoration:none;color:#4B5563;font-weight:500;font-size:14.5px;padding:6px 0;position:relative;transition:color .3s ease}
 .links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:#F97316;border-radius:2px;transition:width .3s ease}
@@ -21,7 +21,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .kicker{color:#F97316;font-size:12.5px;font-weight:600;letter-spacing:1.5px;margin-bottom:12px;white-space:nowrap;display:flex;align-items:center;gap:8px}
 .kicker .dash{width:22px;height:2px;background:#F97316;display:inline-block}
 .hero-left{padding-bottom:30px}
-.hero h1{font-size:clamp(32px,4.5vw,56px);line-height:1.04;font-weight:700;color:#1F2937;overflow-wrap:break-word}
+.hero h1{font-size:clamp(32px,4.5vw,64px);line-height:1.04;font-weight:700;color:#1F2937;overflow-wrap:break-word}
 .hero h1 span{color:#F97316}
 .hero-sub{color:#6B7280;font-size:15px;margin:14px 0 22px;max-width:480px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
@@ -32,9 +32,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .btn-second:hover{transform:scale(1.04);box-shadow:0 12px 26px rgba(0,0,0,.12);border-color:#F97316}
 .btn-second:focus{outline:2px solid #F97316;outline-offset:3px}
 .hero-right{position:relative;min-width:0;overflow:visible;border-radius:0}
-.hero-right img.hero-main{width:100%;height:560px;object-fit:cover;object-position:center;border-radius:0;display:block;background:#fff;transform:none}
+.hero-right img.hero-main{width:100%;height:436px;object-fit:cover;object-position:100% 44%;border-radius:19px 19px 0 0;display:block;background:#fff;transform:none}
 .hero-right::after{content:'';position:absolute;left:-40px;right:0;bottom:-1px;height:64px;background:#fff;border-radius:50% 50% 0 0 / 100% 100% 0 0}
-.hand-t-img{position:absolute;top:72px;left:72px;width:50px;height:auto;z-index:3;background:transparent;mix-blend-mode:multiply;pointer-events:none}
+.hand-t-img{position:absolute;top:44px;left:63px;width:300px;height:auto;z-index:3;background:transparent;mix-blend-mode:multiply;pointer-events:none}
 .hero-right::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:56px;background:#fff;border-radius:50% 50% 0 0 / 100% 100% 0 0}
 .statbar{max-width:1280px;margin:0 auto;background:#fff;border-top:1px solid #F3F4F6;display:flex;align-items:center;justify-content:space-between;padding:20px 32px 26px;gap:10px}
 .stat{display:flex;gap:12px;align-items:center}
@@ -86,13 +86,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .dent-card b{font-size:16.5px;color:#1F2937}
 .dent-card .role{color:#9CA3AF;font-size:13px;display:block;margin:2px 0 12px}
 .dent-card p{color:#1F2937;font-size:14.5px;line-height:1.6}
-.dent-note-img{width:190px;height:auto;display:block;margin-left:24px;mix-blend-mode:multiply}
+.dent-note-img{width:253px;height:auto;display:block;margin-left:24px;mix-blend-mode:multiply}
 .dent-note{color:#F97316;font-family:'Segoe Script','Brush Script MT',cursive;font-style:italic;font-size:19px;transform:rotate(-5deg);line-height:1.4;margin-left:24px}
 .dent-note span{font-size:30px}
 .strip4{max-width:1280px;margin:0 auto;padding:10px 32px 34px;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff}
 .st{display:flex;gap:12px;align-items:center}
 .st small{color:#1F2937;font-size:13.5px;display:block}
 .st b{font-size:19px;color:#1F2937}
+.temo{transform:translate(-12px,0)}
+.book{transform:translate(-12px,0)}
+.contact{transform:translate(4px,0)}
+.temo h2{transform:translate(13px,0)}
+.contact h3{transform:translate(38px,0)}
 /* PRICING */
 .pricing{background:#F9FAFB;padding:36px 0}
 .price-head{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
@@ -125,7 +130,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .btn-live:focus{outline:3px solid #fff;outline-offset:3px}
 /* FINAL */
 .final{background:#fff;padding:40px 0}
-.fin-grid{max-width:1440px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:36px;align-items:start}
+.fin-grid{max-width:1600px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:8px;align-items:start}
 .temo .dash{width:22px;height:2px;background:#F97316;display:inline-block}
 .temo .kicker{display:flex;align-items:center;gap:8px}
 .temo h2{font-size:28px;color:#1F2937;margin-bottom:14px}
@@ -153,12 +158,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .c-row b{display:block;font-size:13.5px}
 .c-row small{color:#6B7280;font-size:12.5px}
 .icon-slot.sq{width:20px;height:20px;border-radius:5px}
-.social{display:flex;gap:10px;margin-top:14px}
+.social{display:flex;gap:10px;margin-top:14px;transform:translate(10px,4px)}
 .social a{width:38px;height:38px;border:1px solid #E5E7EB;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:background .3s ease,border-color .3s ease}
 .social a:hover{background:#F97316;border-color:#F97316}
 .soc-img{width:20px;height:20px;border-radius:50%;display:block;object-fit:cover}
 .social a:has(.soc-img){border:0;width:auto;height:auto}
 .social a:has(.soc-img) .soc-img{width:44px;height:44px}
+.social a:nth-child(1):has(.soc-img) .soc-img{width:48px;height:48px}
+.social a:nth-child(2):has(.soc-img) .soc-img{width:43px;height:43px}
+.social a:nth-child(3):has(.soc-img) .soc-img{width:43px;height:43px}
 .icon-slot.soc{width:18px;height:18px;border-radius:50%}
 .icon-slot.logo{width:140px;height:40px;border-radius:8px}
 /* FOOTER */
